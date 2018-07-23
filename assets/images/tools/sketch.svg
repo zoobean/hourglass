@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="94" viewBox="0 0 104 94">
+  <g fill="none">
+    <polygon fill="#FDB300" points="22.691 3.095 52 0 81.309 3.095 104 33.519 52 94 0 33.519"/>
+    <g transform="translate(0 34)">
+      <polygon fill="#EA6C00" points="21.02 0 51.895 59.985 0 0"/>
+      <polygon fill="#EA6C00" points="72.915 0 103.79 59.985 51.895 0" transform="matrix(-1 0 0 1 155.685 0)"/>
+      <polygon fill="#FDAD00" points="21.02 0 82.77 0 51.895 59.985"/>
+    </g>
+    <polygon fill="#FDD231" points="51.895 0 22.645 3.136 21.02 33.968"/>
+    <polygon fill="#FDD231" points="82.77 0 53.52 3.136 51.895 33.968" transform="matrix(-1 0 0 1 134.665 0)"/>
+    <polygon fill="#FDAD00" points="81.145 33.968 103.79 3.136 102.165 33.968" transform="matrix(-1 0 0 1 184.935 0)"/>
+    <polygon fill="#FDAD00" points="0 33.968 22.645 3.136 21.02 33.968"/>
+    <polygon fill="#FEEEB7" points="51.895 0 21.02 33.968 82.77 33.968"/>
+  </g>
+</svg>

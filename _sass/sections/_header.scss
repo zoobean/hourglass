@@ -1,0 +1,44 @@
+.header {
+  height: 380px;
+  position: relative;
+  background-color: $color-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+
+  @include breakpoint(720px) {
+    margin-bottom: 70px;
+  }
+
+  @include breakpoint(1150px) {
+    margin-bottom: 100px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('/assets/images/header-waves.svg') repeat-x;
+    background-size: contain;
+    height: 44px;
+    left: 0;
+    bottom: -44px;
+    width: 100%;
+
+    @include breakpoint(720px) {
+      height: 70px;
+      bottom: -70px;
+    }
+
+    @include breakpoint(1150px) {
+      height: 100px;
+      bottom: -100px;
+    }
+  }
+}
+
+.buy-now {
+  align-self: flex-end;
+  z-index: 300;
+  margin-bottom: -44px;
+}

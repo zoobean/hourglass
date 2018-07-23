@@ -1,0 +1,31 @@
+.section--intro {
+  padding-bottom: 5em;
+  max-width: 40ch;
+
+  @include breakpoint(720px) {
+    display: flex;
+    max-width: none;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(1020px) {
+    //width: 75%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    max-width: 18ch;
+  }
+
+  p {
+    max-width: 40ch;
+
+    @include breakpoint(720px) {
+      margin-left: 3em;
+    }
+
+    @include breakpoint(1020px) {
+      max-width: 45ch;
+    }
+  }
+}

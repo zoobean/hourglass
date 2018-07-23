@@ -1,0 +1,9 @@
+pages:
+  - name: Gallery
+    url: /my-work
+
+  - name: Blog
+    url: /blog
+
+  - name: About Me
+    url: /about

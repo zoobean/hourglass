@@ -1,0 +1,7 @@
+@mixin breakpoint($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+$breakpoint-smallest: 340px;
