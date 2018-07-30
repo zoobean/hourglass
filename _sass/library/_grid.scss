@@ -130,25 +130,3 @@ $grid_width: ((($column_width+($gutter_width))*$columns)-$gutter_width);
   padding-left: 2.5%;
   padding-right: 2.5%;
 }
-
-.grid-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 68em;
-  left: 50%;
-  margin-left: -544px;
-
-  .grid-item {
-    height: 100vw;
-    background-color: rgba(0,0,0,.3);
-    @include column(1);
-    top: 0;
-    z-index: 1000;
-
-    &:last-child {
-      @include column(1);
-      @include last;
-    }
-  }
-}
