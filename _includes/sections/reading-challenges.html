@@ -5,15 +5,12 @@
   </div>
 
   <div class="section--challenges__challenges-list">
-
-    {% for hello in site.data.challenges %}
-      {% include components/challenge.html challenge=hello %}
+    {% for challenge in site.data.challenges %}
+      {% include components/challenge.html challenge=challenge %}
     {% endfor %}
 
     <div class="challenges__bean">
       <img src="/assets/images/challenges-bean.svg" alt="">
     </div>
   </div>
-
-
 </section>
