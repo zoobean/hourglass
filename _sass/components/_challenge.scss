@@ -76,7 +76,6 @@
 
 .challenge {
   margin-bottom: 50px;
-  //max-width: 350px;
   margin: 50px auto;
 
   @include breakpoint(530px) {
@@ -86,8 +85,6 @@
 
   @include breakpoint(800px) {
     @include column(5);
-    //@include append(1);
-    //@include last-col2;
   }
 
   @include breakpoint(1050px) {
