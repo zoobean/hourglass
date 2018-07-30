@@ -100,13 +100,10 @@
   @include breakpoint(530px) {
     @include column(6);
     @include prepend(1);
-    //margin-left: 40px;
   }
 
   @include breakpoint(800px) {
     @include column(5);
-    //@include prepend(1);
-    //margin-left: 40px;
   }
 
   h2 {
@@ -139,8 +136,6 @@
     order: 1;
 
     @include breakpoint(800px) {
-      //text-align: right;
-      //margin-left: (column_width(2));
       position: relative;
       left: 90px;
       @include column(5);
