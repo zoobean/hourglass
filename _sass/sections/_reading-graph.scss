@@ -22,7 +22,7 @@
   margin-right: -50vw;
   z-index: -1;
 
-  @include breakpoint(1020px) {
+  @include breakpoint(1050px) {
     top: -200px;
   }
 
@@ -41,7 +41,7 @@
       width: 100%;
     }
 
-    @include breakpoint(1020px) {
+    @include breakpoint(1050px) {
       width: 75%;
       right: -25%;
       top: 200px;

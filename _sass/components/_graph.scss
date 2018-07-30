@@ -42,11 +42,18 @@
     height: 9px;
     background-color: $color-light-gray;
     border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(1,.04,.3,.96);
 
     @include breakpoint(720px) {
       order: 2;
       margin-right: 20px;
       width: 100%;
+    }
+
+    &.visible {
+      transform: scaleX(1);
     }
   }
 
@@ -100,6 +107,7 @@
     flex-shrink: 0;
     order: 2;
     margin-right: 20px;
+    transition-delay: 0.1s;
   }
 
   .graph__datapoint__label--time {
@@ -129,6 +137,7 @@
     flex-shrink: 0;
     order: 2;
     margin-right: 20px;
+    transition-delay: 0.05s;
   }
 
   .graph__datapoint__label--time {

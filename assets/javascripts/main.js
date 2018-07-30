@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   });
 
+  var animate = new Animate({
+        target: '[data-animate]',
+        offset: [0.5, 0.5]
+    });
+    animate.init();
+    console.log(animate);
+
   var optimizedResize = (function() {
 
     var callbacks = [],

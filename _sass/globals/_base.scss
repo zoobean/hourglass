@@ -12,7 +12,7 @@
   margin: 0 auto;
   @include container();
 
-  @include breakpoint(1020px) {
+  @include breakpoint(1050px) {
     padding-top: 8em;
   }
 }

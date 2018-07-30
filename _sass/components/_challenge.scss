@@ -61,7 +61,7 @@
     justify-content: space-between;
   }
 
-  @include breakpoint(1020px) {
+  @include breakpoint(1050px) {
     @include column(12);
     @include last;
     display: flex;
@@ -90,7 +90,7 @@
     //@include last-col2;
   }
 
-  @include breakpoint(1020px) {
+  @include breakpoint(1050px) {
     @include column(3);
     @include last-col4;
   }
@@ -190,7 +190,7 @@
   top: -60px;
   z-index: -1;
 
-  @include breakpoint(1020px) {
+  @include breakpoint(1050px) {
     top: -200px;
   }
 
@@ -198,7 +198,7 @@
     width: 75%;
     transform: translateX(-25%);
 
-    @include breakpoint(1020px) {
+    @include breakpoint(1050px) {
       width: 50%;
     }
   }

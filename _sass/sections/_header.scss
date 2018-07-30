@@ -177,7 +177,7 @@
     font-weight: bold;
     font-size: 2.125em;
 
-    @include breakpoint(850px) {
+    @include breakpoint(860px) {
       font-size: 3em;
     }
 
@@ -191,7 +191,7 @@
       @include body-face;
       color: rgba(0,0,0,0.55);
 
-      @include breakpoint(850px) {
+      @include breakpoint(860px) {
         font-size: 0.35em;
       }
     }

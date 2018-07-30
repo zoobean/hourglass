@@ -19,7 +19,7 @@
 .footer__content {
   position: relative;
   z-index: 5000;
-  
+
   @include breakpoint(530px) {
     @include column(8);
     @include prepend(4);
