@@ -1,0 +1,27 @@
+- name: Back to School Challenge
+  sponsor: Sponsored by Junior Library Guild
+  start_date: September 15, 2018
+  end_date: October 15, 2018
+  primary_img: back-to-school--primary.jpg
+  secondary_img: back-to-school--secondary.jpg
+
+- name: Mark Cuban's Winter Reading Challenge
+  sponsor: Sponsored by Mark Cuban
+  start_date: January 1, 2019
+  end_date: January 31, 2019
+  primary_img: winter-reading--primary.jpg
+  secondary_img: winter-reading--secondary.jpg
+
+- name: Read Across America Challenge
+  sponsor: Sponsor to be announced
+  start_date: March 2, 2019
+  end_date: March 8, 2019
+  primary_img: read-across-america--primary.jpg
+  secondary_img: read-across-america--primary.jpg
+
+- name: Summer Reading Challenge
+  sponsor: Sponsored by School Library Journal
+  start_date: June 1, 2019
+  end_date: July 31, 2019
+  primary_img: summer-reading--primary.jpg
+  secondary_img: summer-reading--secondary.jpg
