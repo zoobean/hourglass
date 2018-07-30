@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         offset: [0.5, 0.5]
     });
     animate.init();
-    console.log(animate);
 
   var optimizedResize = (function() {
 
