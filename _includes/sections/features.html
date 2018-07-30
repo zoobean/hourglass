@@ -4,29 +4,8 @@
   </div>
 
   <div class="features">
-    <div class="feature feature--active">
-      <div class="feature__image"><img src="/assets/images/features/reading-timers.jpg"></div>
-      <span class="feature__title" tabindex="0">Set reading timers and goals</span>
-    </div>
-
-    <div class="feature">
-      <div class="feature__image"><img src="/assets/images/features/tracking.jpg"></div>
-      <span class="feature__title" tabindex="0">Track reading sessions with the Hourglass or the Beanstack app</span>
-    </div>
-
-    <div class="feature">
-      <div class="feature__image"><img src="/assets/images/features/challenges.jpg"></div>
-      <span class="feature__title" tabindex="0">Participate in local and national reading challenges</span>
-    </div>
-
-    <div class="feature">
-      <div class="feature__image"><img src="/assets/images/features/badges.jpg"></div>
-      <span class="feature__title" tabindex="0">Receive digital badges for achievements</span>
-    </div>
-
-    <div class="feature">
-      <div class="feature__image"><img src="/assets/images/features/brightness.jpg"></div>
-      <span class="feature__title" tabindex="0">Set light to bright for reading or dim for night light</span>
-    </div>
+    {% for feature in site.data.features %}
+      {% include components/feature.html features=feature %}
+    {% endfor %}
   </div>
 </section>
