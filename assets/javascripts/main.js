@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.querySelector('.feature--active').classList.remove('feature--active');
       feature.classList.add('feature--active');
     });
+
+    feature.querySelector('.feature__title').addEventListener('keyup', function(event) {
+      if (event.keyCode === 13) {
+        document.querySelector('.feature--active').classList.remove('feature--active');
+        feature.classList.add('feature--active');
+      }
+    });
   });
 
   var animate = new Animate({
