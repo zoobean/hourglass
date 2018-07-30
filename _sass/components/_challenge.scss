@@ -181,12 +181,7 @@
 }
 
 .challenges__bean {
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  @include push-outside;
   top: -60px;
   z-index: -1;
 

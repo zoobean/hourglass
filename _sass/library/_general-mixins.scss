@@ -37,3 +37,12 @@
     transform: translateY(20px);
   }
 }
+
+@mixin push-outside() {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}

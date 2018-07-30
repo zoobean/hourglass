@@ -14,12 +14,7 @@
 }
 
 .graph__waves {
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  @include push-outside;
   z-index: -1;
 
   @include breakpoint(1050px) {
