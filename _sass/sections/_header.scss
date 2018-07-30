@@ -157,6 +157,7 @@
   position: absolute;
   bottom: 180px;
   right: 30px;
+  z-index: 5000;
 
   @include breakpoint(580px) {
     bottom: 30px;
@@ -211,6 +212,7 @@
   font-size: 0.9em;
   bottom: 60px;
   right: 30px;
+  z-index: 5000;
 
   @include breakpoint(580px) {
     bottom: 70px;
@@ -234,6 +236,8 @@
   align-self: flex-end;
   z-index: 300;
   margin-bottom: -70px;
+  position: relative;
+  z-index: 5000;
 
   @include breakpoint(430px) {
     margin-bottom: -90px;
