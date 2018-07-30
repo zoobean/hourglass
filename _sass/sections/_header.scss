@@ -1,18 +1,34 @@
 .header {
-  height: 380px;
+  height: 440px;
   position: relative;
   background-color: $color-yellow;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 
-  @include breakpoint(720px) {
+  @include breakpoint(430px) {
+    margin-bottom: 44px;
+  }
+
+  @include breakpoint(580px) {
+    justify-content: flex-start;
+    height: 420px;
     margin-bottom: 70px;
   }
 
+  @include breakpoint(720px) {
+    margin-bottom: 90px;
+    height: 300px;
+  }
+
+  @include breakpoint(950px) {
+    height: 360px;
+  }
+
   @include breakpoint(1150px) {
-    margin-bottom: 100px;
+    height: 430px;
+    margin-bottom: 140px;
   }
 
   &::after {
@@ -20,10 +36,15 @@
     position: absolute;
     background: url('/assets/images/header-waves.svg') repeat-x;
     background-size: contain;
-    height: 44px;
+    height: 30px;
     left: 0;
-    bottom: -44px;
+    bottom: -30px;
     width: 100%;
+
+    @include breakpoint(430px) {
+      height: 44px;
+      bottom: -44px;
+    }
 
     @include breakpoint(720px) {
       height: 70px;
@@ -37,8 +58,407 @@
   }
 }
 
-.buy-now {
+.header__inner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(580px) {
+    justify-content: flex-start;
+    height: 420px;
+  }
+
+  @include breakpoint(720px) {
+    height: 300px;
+  }
+
+  @include breakpoint(950px) {
+    height: 360px;
+  }
+
+  @include breakpoint(1150px) {
+    height: 430px;
+  }
+}
+
+.header__brain {
+  position: absolute;
+  width: 260px;
+  left: -120px;
+  top: -0px;
+  z-index: 100;
+
+  @include breakpoint(350px) {
+    width: 320px;
+    top: -20px;
+  }
+
+  @include breakpoint(580px) {
+    width: 400px;
+    left: -200px;
+  }
+
+  @include breakpoint(800px) {
+    width: 450px;
+    top: -50px;
+  }
+
+  @include breakpoint(950px) {
+    width: 450px;
+    top: 50px;
+  }
+
+  @include breakpoint(1150px) {
+    width: 600px;
+    top: 50px;
+    left: -300px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.header__hourglass {
+  position: absolute;
+  width: 600px;
+  right: -80px;
+  bottom: -15px;
+  z-index: 200;
+
+  @include breakpoint(580px) {
+    width: 800px;
+    bottom: -230px;
+    z-index: 100;
+    right: -200px;
+  }
+
+  @include breakpoint(950px) {
+    width: 900px;
+  }
+
+  @include breakpoint(1150px) {
+    width: 1200px;
+    bottom: -350px;
+    right: -300px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.header__intro {
+  position: absolute;
+  bottom: 180px;
+  right: 30px;
+
+  @include breakpoint(580px) {
+    bottom: 30px;
+    right: 380px;
+  }
+
+  @include breakpoint(950px) {
+    right: 450px;
+    bottom: 50px;
+  }
+
+  @include breakpoint(1150px) {
+    right: 570px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2.125em;
+
+    @include breakpoint(850px) {
+      font-size: 3em;
+    }
+
+    @include breakpoint(1150px) {
+      font-size: 4em;
+    }
+
+    .header__intro__smalltext {
+      font-size: 0.45em;
+      display: block;
+      @include body-face;
+      color: rgba(0,0,0,0.55);
+
+      @include breakpoint(850px) {
+        font-size: 0.35em;
+      }
+    }
+
+    .header__intro__smalltext--right {
+      text-align: right;
+    }
+  }
+}
+
+.header__description {
+  position: absolute;
+  width: 150px;
+  text-align: right;
+  font-weight: bold;
+  color: rgba(0,0,0,0.55);
+  line-height: 1.2;
+  font-size: 0.9em;
+  bottom: 60px;
+  right: 30px;
+
+  @include breakpoint(580px) {
+    bottom: 70px;
+    text-align: left;
+    right: 80px;
+  }
+
+  @include breakpoint(950px) {
+    bottom: 100px;
+    z-index: 100;
+  }
+
+  @include breakpoint(1150px) {
+    right: 570px;
+    bottom: 20px;
+    text-align: right;
+  }
+}
+
+.header .buy-now {
   align-self: flex-end;
   z-index: 300;
-  margin-bottom: -44px;
+  margin-bottom: -70px;
+
+  @include breakpoint(430px) {
+    margin-bottom: -90px;
+  }
+
+  @include breakpoint(580px) {
+    margin-left: 30px;
+    margin-bottom: -85px;
+  }
+
+  @include breakpoint(720px) {
+    margin-bottom: -80px;
+    margin-left: 160px;
+  }
+
+  @include breakpoint(950px) {
+    margin-bottom: -80px;
+    margin-left: 170px;
+  }
+
+  @include breakpoint(1150px) {
+    margin-left: 140px;
+  }
+}
+
+.buy-button {
+  background-color: $color-blue;
+  cursor: pointer;
+  color: white;
+  padding: 0.75em 2em;
+  border-radius: 60px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.08);
+  text-decoration: none;
+  background-color: mix(#000, $color-blue, 40%);
+  display: inline-block;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: mix(#000, $color-blue, 60%);
+  }
+}
+
+.header__circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circles__set-1,
+.circles__set-2,
+.circles__set-3 {
+  &::before, &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.circles__set-1 {
+  &::before {
+    @include circle('yellow', 58px);
+    top: 50px;
+    right: -10px;
+    animation: float 4s ease-in-out infinite alternate;
+
+    @include breakpoint(580px) {
+      @include circle('yellow', 140px);
+      top: 150px;
+      right: -60px;
+    }
+
+    @include breakpoint(720px) {
+      @include circle('yellow', 140px);
+      top: -40px;
+      left: 290px;
+    }
+
+    @include breakpoint(950px) {
+      @include circle('yellow', 100px);
+      top: 40px;
+      left: 320px;
+    }
+
+    @include breakpoint(1150px) {
+      @include circle('yellow', 160px);
+      top: 20px;
+      left: 320px;
+    }
+  }
+
+  &::after {
+    @include circle('purple', 18px);
+    top: -5px;
+    right: 20px;
+    animation: float 3s ease-in-out infinite alternate;
+
+    @include breakpoint(1150px) {
+      @include circle('yellow', 83px);
+      top: 0;
+      right: 50px;
+    }
+  }
+}
+
+.circles__set-2 {
+  &::before {
+    @include circle('purple', 100px);
+    top: 40px;
+    right: 110px;
+    animation: float 5s ease-in-out infinite alternate;
+
+    @include breakpoint(720px) {
+      @include circle('purple', 100px);
+      top: 40px;
+      right: 80px;
+    }
+
+    @include breakpoint(950px) {
+      @include circle('purple', 130px);
+      top: 40px;
+      right: 80px;
+    }
+
+    @include breakpoint(1150px) {
+      @include circle('purple', 130px);
+      top: 40px;
+      right: 185px;
+    }
+  }
+
+  &::after {
+    @include circle('yellow', 35px);
+    top: 100px;
+    right: 180px;
+    animation: float 4.22s ease-in-out infinite alternate;
+
+    @include breakpoint(720px) {
+      @include circle('yellow', 35px);
+      top: 100px;
+      right: 150px;
+    }
+
+    @include breakpoint(950px) {
+      @include circle('yellow', 25px);
+      top: 140px;
+      right: 170px;
+    }
+
+    @include breakpoint(1150px) {
+      @include circle('yellow', 25px);
+      top: 140px;
+      right: 280px;
+    }
+  }
+}
+
+.circles__set-3 {
+  &::before {
+    @include circle('purple', 50px);
+    bottom: 00px;
+    left: -20px;
+    animation: float 5s ease-in-out infinite alternate;
+
+    @include breakpoint(430px) {
+      @include circle('purple', 120px);
+      bottom: 00px;
+      left: -40px;
+    }
+
+    @include breakpoint(580px) {
+      @include circle('purple', 40px);
+      top: 100px;
+      left: 200px;
+    }
+
+    @include breakpoint(720px) {
+      @include circle('purple', 20px);
+      top: 100px;
+      left: 200px;
+    }
+
+    @include breakpoint(950px) {
+      @include circle('purple', 35px);
+      top: 140px;
+      left: 450px;
+    }
+
+    @include breakpoint(950px) {
+      @include circle('purple', 35px);
+      top: 140px;
+      left: 450px;
+    }
+
+    @include breakpoint(1150px) {
+      @include circle('purple', 55px);
+      top: 140px;
+      right: 540px;
+      left: auto;
+    }
+  }
+
+  &::after {
+    @include breakpoint(430px) {
+      @include circle('yellow', 30px);
+      bottom: 150px;
+      left: 80px;
+      animation: float 3.5s ease-in-out infinite alternate;
+    }
+
+    @include breakpoint(720px) {
+      @include circle('yellow', 30px);
+      bottom: 0;
+      left: 80px;
+    }
+
+    @include breakpoint(1150px) {
+      @include circle('purple', 47px);
+      bottom: 100px;
+      right: 50px;
+      left: auto;
+    }
+  }
 }

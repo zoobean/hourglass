@@ -1,0 +1,150 @@
+.section--features {
+  .section__content {
+    @include breakpoint(530px) {
+      @include column(7);
+    }
+
+    @include breakpoint(720px) {
+      @include column(5);
+    }
+
+    @include breakpoint(950px) {
+      @include column(4);
+    }
+  }
+}
+
+.features {
+  @include pie-clearfix;
+  padding-top: 40px;
+  clear: both;
+  position: relative;
+}
+
+.feature {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $color-light-gray;
+  @include pie-clearfix;
+
+  @include breakpoint(720px) {
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+  }
+
+  .feature__image {
+    margin-bottom: -20px;
+    margin-left: -50px;
+    margin-right: 8%;
+
+    @include breakpoint(720px) {
+      @include column(7);
+      @include prepend(1);
+      @include last;
+      order: 2;
+      margin-top: 80px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+    }
+
+    @include breakpoint(1050px) {
+      @include column(8);
+      @include prepend(1);
+      margin-top: 20px;
+      margin-right: -$column_width + $gutter-width;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      top: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .feature__title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: $color-text-light;
+    @include column(8);
+    @include prepend(2);
+    @include append(2);
+    transition: color 0.15s ease-in-out;
+    position: relative;
+
+    @include breakpoint(530px) {
+      @include column(6);
+      @include prepend(3);
+      @include append(3);
+    }
+
+    @include breakpoint(720px) {
+      @include column(4);
+      text-align: left;
+      order: 1;
+      cursor: pointer;
+    }
+
+    @include breakpoint(1050px) {
+      @include column(3);
+      text-align: left;
+      order: 1;
+    }
+
+    &:hover {
+      @include breakpoint(720px) {
+        color: $color-text-dark;
+        position: relative;
+      }
+    }
+
+    &::before {
+      @include breakpoint(720px) {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        background-color: $color-dark-purple;
+        border-radius: 50%;
+        top: 8px;
+        left: -30px;
+        box-shadow: 0 5px 13px 0 rgba(213,92,173,0.42);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      @include breakpoint(1050px) {
+        left: -30px;
+      }
+    }
+  }
+}
+
+.feature--active {
+
+  .feature__title {
+    @include breakpoint(720px) {
+      color: $color-text-dark;
+      position: relative;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+
+  }
+
+  .feature__image {
+    @include breakpoint(720px) {
+      display: block;
+      opacity: 1;
+    }
+  }
+}

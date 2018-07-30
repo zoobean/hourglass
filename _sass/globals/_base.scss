@@ -2,15 +2,19 @@
   box-sizing: border-box;
 }
 
+body {
+  //background-color: #FFFEF7;
+}
+
+.container {
+  overflow: hidden;
+}
+
 .content {
   padding: 5em 30px;
   max-width: 1050px;
   margin: 0 auto;
-  overflow: hidden;
-
-  @include breakpoint(530px) {
-    padding: 5em 40px;
-  }
+  @include container();
 
   @include breakpoint(1020px) {
     padding-top: 8em;
@@ -28,4 +32,32 @@ button {
   font-size: 16px;
   border: none;
   box-shadow: 0 8px 20px 0 rgba(0,0,0,0.08);
+}
+
+.price {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.price__regular {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: calc(100% + 6px);
+    top: 50%;
+    margin-top: -1.5px;
+    left: 0;
+    margin-left: -3px;
+    background-color: $color-red;
+    border-radius: 10px;
+  }
+}
+
+.price__discount {
+  color: $color-red;
+  margin-left: 10px;
 }

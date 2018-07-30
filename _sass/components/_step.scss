@@ -1,0 +1,157 @@
+.section--steps {
+  @include pie-clearfix;
+  margin-top: 50px;
+
+}
+
+.step .circle-1 {
+  @include breakpoint(1150px) {
+    @include circle('purple', 90px);
+    position: absolute;
+    top: 75%;
+    right: -30px;
+    box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
+    animation: float 4s ease-in-out infinite alternate;
+  }
+}
+
+.step .circle-2 {
+  @include breakpoint(1150px) {
+    @include circle('yellow', 30px);
+    position: absolute;
+    top: 105%;
+    left: -30px;
+    box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
+    animation: float 3s ease-in-out infinite alternate;
+  }
+}
+
+.step .circle-3 {
+  @include breakpoint(1150px) {
+    @include circle('yellow', 140px);
+    position: absolute;
+    top: 105%;
+    right: -120px;
+    box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
+    animation: float 5s ease-in-out infinite alternate;
+  }
+}
+
+.step {
+  margin-bottom: 100px;
+  position: relative;
+
+  @include breakpoint(530px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &::after {
+    @include breakpoint(800px) {
+      content: "";
+      width: 50vw;
+      height: 150px;
+      position: absolute;
+      bottom: -30%;
+      left: 15%;
+      background: url('/assets/images/steps/step-1-to-2.svg');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: contain;
+    }
+  }
+}
+
+.step:nth-child(2) {
+  &::after {
+    background-image: url('/assets/images/steps/step-2-to-3.svg');
+    background-position: right bottom;
+    height: 210px;
+    bottom: -50%;
+    left: auto;
+    right: 13%;
+  }
+}
+
+.step:last-child {
+  &::after {
+    content: none;
+  }
+}
+
+
+.step__image {
+  margin-bottom: -50px;
+
+  @include breakpoint(530px) {
+    @include column(6);
+    margin: 0;
+    margin-left: -(column_width(2));
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.step__content {
+  margin-top: -1em;
+
+  @include breakpoint(530px) {
+    @include column(6);
+    @include prepend(1);
+    //margin-left: 40px;
+  }
+
+  @include breakpoint(800px) {
+    @include column(5);
+    //@include prepend(1);
+    //margin-left: 40px;
+  }
+
+  h2 {
+    @include breakpoint(800px) {
+      margin-left: -60px;
+    }
+  }
+}
+
+.step__number {
+  @include title-face;
+  color: $color-dark-purple;
+  font-size: 1.414em;
+  font-weight: bold;
+}
+
+.step__name {
+  margin-top: 0.3em;
+  margin-bottom: 1.3em;
+}
+
+.step--reversed {
+  .step__image {
+    order: 2;
+    margin-left: 0;
+    margin-left: (column_width(2));
+  }
+
+  .step__content {
+    order: 1;
+
+    @include breakpoint(800px) {
+      //text-align: right;
+      //margin-left: (column_width(2));
+      position: relative;
+      left: 90px;
+      @include column(5);
+    }
+
+    h2 {
+      @include breakpoint(800px) {
+        margin-left: 0;
+        margin-right: -60px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.section--graph {
+  @include pie-clearfix;
+  position: relative;
+
+  .section__content {
+    @include breakpoint(530px) {
+      @include column(7);
+    }
+
+    @include breakpoint(720px) {
+      @include column(5);
+    }
+  }
+}
+
+.graph__waves {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -1;
+
+  @include breakpoint(1020px) {
+    top: -200px;
+  }
+
+  img {
+    width: 125%;
+    position: absolute;
+    right: -50%;
+    top: -20%;
+
+    @include breakpoint(530px) {
+      top: -50px;
+    }
+
+    @include breakpoint(720px) {
+      top: -50px;
+      width: 100%;
+    }
+
+    @include breakpoint(1020px) {
+      width: 75%;
+      right: -25%;
+      top: 200px;
+
+      max-width: 800px;
+    }
+  }
+}

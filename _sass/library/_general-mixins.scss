@@ -1,0 +1,39 @@
+@mixin clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+@mixin pie-clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin circle($color, $size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  box-shadow: 12px 9px 36px 0 rgba(255,0,0,0.23);
+  z-index: 500;
+
+  @if $color == 'yellow' {
+    background-image: linear-gradient(130deg, #FFE58C 7%, #FFCB1C 92%);
+  } @else if $color == 'purple' {
+    background-image: linear-gradient(130deg, #FFA1E1 7%, #D45BAD 92%);
+  } @else if $color == 'white' {
+    background-image: linear-gradient(130deg, #fafafa 7%, #e5e5e5 92%);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}

@@ -1,7 +1,0 @@
-<svg class="header__logo-image" xmlns="http://www.w3.org/2000/svg" width="72" height="89" viewBox="0 0 72 89">
-  <g fill="none" fill-rule="evenodd">
-    <path fill="#000" fill-rule="nonzero" d="M36,62 C50.3594035,62 62,50.3594035 62,36 C62,21.6405965 50.3594035,10 36,10 C21.6405965,10 10,21.6405965 10,36 C10,50.3594035 21.6405965,62 36,62 Z M36,72 C16.117749,72 0,55.882251 0,36 C0,16.117749 16.117749,0 36,0 C55.882251,0 72,16.117749 72,36 C72,55.882251 55.882251,72 36,72 Z"/>
-    <rect width="10" height="55" y="32" fill="#000" rx="5"/>
-    <rect width="10" height="26" x="52" y="62" fill="#000" rx="5" transform="rotate(-30 57 75)"/>
-  </g>
-</svg>

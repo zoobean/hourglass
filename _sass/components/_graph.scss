@@ -1,0 +1,149 @@
+.graph {
+  margin-top: 30px;
+  @include column(12);
+  @include last;
+  clear: both;
+
+  @include breakpoint(1050px) {
+    @include column(10);
+  }
+}
+
+.graph__datapoint {
+  margin-bottom: 40px;
+  font-weight: 600;
+
+  @include breakpoint(720px) {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .graph__datapoint__label--time {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include breakpoint(720px) {
+      width: 11ch;
+      flex-shrink: 0;
+      margin-right: 20px;
+      border-right: 1px solid $color-light-gray;
+      padding-right: 20px;
+      text-align: right;
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .graph__datapoint__bar {
+    display: block;
+    width: 100%;
+    height: 9px;
+    background-color: $color-light-gray;
+    border-radius: 10px;
+
+    @include breakpoint(720px) {
+      order: 2;
+      margin-right: 20px;
+      width: 100%;
+    }
+  }
+
+  .graph__datapoint__label--words {
+    font-size: 13px;
+    font-weight: normal;
+
+    @include breakpoint(720px) {
+      order: 3;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.graph__datapoint--featured {
+  .graph__datapoint__label--words {
+    font-weight: bold;
+    font-size: 1.44em;
+    color: $color-text-dark;
+    display: block;
+    line-height: 1.3;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    @include breakpoint(720px) {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+
+  .graph__datapoint__label--description {
+    font-weight: normal;
+    font-size: 13px;
+    color: $color-text-regular;
+    display: block;
+  }
+
+  .graph__datapoint__bar {
+    background-image: linear-gradient(90deg, $color-dark-purple, $color-light-purple);
+    box-shadow: 0 5px 13px rgba(213, 92, 137, 0.27);
+  }
+}
+
+.graph__datapoint--medium {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .graph__datapoint__bar {
+    width: 33%;
+    flex-shrink: 0;
+    order: 2;
+    margin-right: 20px;
+  }
+
+  .graph__datapoint__label--time {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include breakpoint(720px) {
+      width: 11ch;
+      flex-shrink: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .graph__datapoint__label--words {
+    order: 3;
+  }
+}
+
+.graph__datapoint--small {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .graph__datapoint__bar {
+    width: 15%;
+    flex-shrink: 0;
+    order: 2;
+    margin-right: 20px;
+  }
+
+  .graph__datapoint__label--time {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include breakpoint(720px) {
+      width: 11ch;
+      flex-shrink: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .graph__datapoint__label--words {
+    order: 3;
+  }
+}

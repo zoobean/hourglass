@@ -11,7 +11,10 @@
   <body>
     <div class="container">
       {% include header.html %}
-      <div class="content">{{ content }}</div>
+      <div class="content">
+        {{ content }}
+      </div>
+      {% include footer.html %}
 
       <script src="{{ "/assets/javascripts/main.js" | relative_url }}"></script>
     </div>

@@ -1,0 +1,41 @@
+.logo-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+
+  @include breakpoint(720px) {
+    @include prepend(1);
+    @include append(1);
+  }
+
+  @include breakpoint(1050px) {
+    @include prepend(2);
+    @include append(2);
+  }
+
+  li {
+    @include column(6);
+    @include last-col2;
+    box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    border-radius: 30px;
+    line-height: 0;
+    margin-bottom: $gutter_width;
+
+    @include breakpoint(520px) {
+      @include column(4);
+      @include last-col3;
+    }
+
+    @include breakpoint(720px) {
+      @include column(3);
+      @include last-col4;
+
+    }
+
+    img {
+      width: 100%;
+      border-radius: 17%;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.footer {
+  padding-bottom: 50px;
+  @include pie-clearfix;
+  position: relative;
+
+  .price {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+.footer__inner {
+  padding: 0 30px;
+  max-width: 1050px;
+  margin: 0 auto;
+  @include container();
+}
+
+.footer__content {
+  @include breakpoint(530px) {
+    @include column(8);
+    @include prepend(4);
+  }
+
+  @include breakpoint(800px) {
+    @include column(5);
+    @include prepend(5);
+  }
+
+  @include breakpoint(950px) {
+    @include column(4);
+    @include prepend(3);
+  }
+
+  @include breakpoint(1250px) {
+    @include column(5);
+    @include prepend(2);
+  }
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  clear: both;
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: $color-dark-purple;
+      top: 50%;
+      margin-top: -4.5px;
+      left: 0;
+    }
+  }
+}
+
+.footer__images {
+  margin-top: 80px;
+  position: relative;
+}
+
+.footer__images__hourglass {
+  left: -30px;
+  width: 270px;
+  top: 0;
+  margin-bottom: -70px;
+
+  @include breakpoint(530px) {
+    position: absolute;
+    width: 220px;
+    bottom: 50px;
+    top: 0;
+    right: -260px;
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(800px) {
+    width: 300px;
+    top: -80px;
+  }
+
+  @include breakpoint(1250px) {
+    width: 300px;
+    top: -50px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__images__hand {
+  position: absolute;
+  width: 450px;
+  transform: rotate(-60deg);
+  right: -220px;
+  top: -120px;
+
+  @include breakpoint(530px) {
+    top: 230px;
+    right: -260px;
+    width: 500px;
+    position: absolute;
+  }
+
+  @include breakpoint(800px) {
+    transform: rotate(0);
+    top: 200px;
+    right: -80px;
+  }
+
+  @include breakpoint(950px) {
+    width: 800px;
+    top: 60px;
+  }
+
+  @include breakpoint(1250px) {
+    right: 80px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

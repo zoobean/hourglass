@@ -1,0 +1,205 @@
+.section--challenges {
+  @include pie-clearfix;
+  position: relative;
+
+  .section__content {
+    order: 2;
+
+    @include breakpoint(530px) {
+      @include column(12);
+    }
+
+    h2 {
+      @include breakpoint(530px) {
+        @include column(5);
+      }
+
+      @include breakpoint(720px) {
+        @include column(6);
+      }
+
+      @include breakpoint(860px) {
+        @include column(4);
+      }
+    }
+
+    p {
+      @include breakpoint(530px) {
+        @include column(7);
+        @include last;
+      }
+
+      @include breakpoint(720px) {
+        @include column(6);
+        @include last;
+      }
+
+      @include breakpoint(860px) {
+        @include prepend(2);
+        @include last;
+      }
+    }
+  }
+}
+
+.section--challenges__challenges-list {
+  @include column(12);
+  @include last;
+  position: relative;
+
+  @include breakpoint(530px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(800px) {
+    @include column(10);
+    @include append(2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include breakpoint(1020px) {
+    @include column(12);
+    @include last;
+    display: flex;
+  }
+
+  @include breakpoint(1340px) {
+    margin-left: -($gutter_width + $column_width);
+    margin-right: -($gutter_width + $column_width);
+    width: auto;
+  }
+}
+
+.challenge {
+  margin-bottom: 50px;
+  //max-width: 350px;
+  margin: 50px auto;
+
+  @include breakpoint(530px) {
+    @include column(6);
+    @include last-col2;
+  }
+
+  @include breakpoint(800px) {
+    @include column(5);
+    //@include append(1);
+    //@include last-col2;
+  }
+
+  @include breakpoint(1020px) {
+    @include column(3);
+    @include last-col4;
+  }
+}
+
+.challenge__card {
+  background: $color-white;
+  border-radius: 12px;
+  box-shadow: 0 5px 28px rgba(0,0,0,.06);
+  padding: 30px 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.challenge__date {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  color: $color-text-light;
+  font-size: 14px;
+
+  @include breakpoint(530px) {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: $color-dark-purple;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.challenge__date__time {
+  display: block;
+}
+
+.challenge__images {
+  display: flex;
+  align-items: flex-start;
+}
+
+.challenge__image__primary {
+  width: 80%;
+  border-radius: 50%;
+  border: 5px solid $color-white;
+  margin-left: -20%;
+  position: relative;
+  z-index: 100;
+}
+
+.challenge__image__secondary {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: -10%;
+}
+
+.challenge__title {
+  font-size: 18px;
+  @include title-face;
+  font-weight: bold;
+  color: $color-text-dark;
+  text-align: right;
+  margin-top: -40px;
+
+  span {
+    display: block;
+    width: 9ch;
+    margin: 0 0 0 auto;
+    line-height: 1.2;
+  }
+}
+
+.challenge__sponsor {
+  font-size: 14px;
+  color: $color-text-light;
+  display: block;
+  text-align: center;
+}
+
+.challenges__bean {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  top: -60px;
+  z-index: -1;
+
+  @include breakpoint(1020px) {
+    top: -200px;
+  }
+
+  img {
+    width: 75%;
+    transform: translateX(-25%);
+
+    @include breakpoint(1020px) {
+      width: 50%;
+    }
+  }
+}
