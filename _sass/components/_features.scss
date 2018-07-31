@@ -45,7 +45,7 @@
       @include prepend(1);
       @include last;
       order: 2;
-      margin-top: 80px;
+      margin-top: 40px;
       position: absolute;
       right: 0;
       top: 0;
@@ -54,8 +54,7 @@
 
     @include breakpoint(1050px) {
       @include column(8);
-      @include prepend(1);
-      margin-top: 20px;
+      margin-top: 10px;
       margin-right: -$column_width + $gutter-width;
       display: block;
       opacity: 0;
@@ -93,7 +92,7 @@
     }
 
     @include breakpoint(1050px) {
-      @include column(3);
+      @include column(4);
       text-align: left;
       order: 1;
     }
