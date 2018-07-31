@@ -79,7 +79,7 @@
   }
 }
 
-.ice-cream {
+.confetti {
   @include push-outside;
   top: -250px;
   display: none;
@@ -89,7 +89,7 @@
   }
 
   img {
-    width: 150px;
+    width: 250px;
     transform: translateX(-50px) rotate(45deg);
   }
 }
