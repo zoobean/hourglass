@@ -227,7 +227,7 @@
 
   @include breakpoint(1150px) {
     right: 570px;
-    bottom: 20px;
+    bottom: 0;
     text-align: right;
   }
 }
@@ -441,6 +441,7 @@
       top: 140px;
       right: 540px;
       left: auto;
+      display: none;
     }
   }
 
