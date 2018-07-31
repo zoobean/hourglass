@@ -3,7 +3,7 @@
   active: true
   image_alt: Screenshots of the Beanstack app tracking the time read (currently 15 minutes and 12 seconds) for Jessica Herthel and Jazz Jennings' I Am Jazz.
 
-- title: Track reading sessions with the Hourglass or the Beanstack app
+- title: Track reading sessions with Hourglass or the Beanstack app
   image: tracking.jpg
   image_alt: Screenshot of the Beanstack app showing reading statistics for the week.
 
@@ -17,4 +17,4 @@
 
 - title: Set light to bright for reading or dim for night light
   image: brightness.jpg
-  image_alt: A rendering of two smartphones, one with a sun representing the Hourglass' full-light mode, the other with a moon representing its nightlight mode.
+  image_alt: A rendering of two smartphones, one with a sun representing Hourglass' full-light mode, the other with a moon representing its nightlight mode.
