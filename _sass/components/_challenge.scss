@@ -21,7 +21,7 @@
   background: $color-white;
   border-radius: 12px;
   box-shadow: 0 5px 28px rgba(0,0,0,.06);
-  padding: 30px 20px;
+  padding: 30px 20px 0;
   overflow: hidden;
   margin-bottom: 20px;
   height: 100%;
@@ -31,16 +31,38 @@
 }
 
 .challenge__date {
-  padding-bottom: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 0;
   position: relative;
   width: 100%;
   color: $color-text-light;
   font-size: 14px;
+  margin-bottom: 25px;
 
   @include breakpoint(530px) {
     margin-bottom: 0;
   }
+}
+
+.challenge__date__time {
+  display: block;
+}
+
+.challenge__image__primary {
+  width: calc(100% + 50px);
+  position: relative;
+  z-index: 100;
+  margin: 0 -25px -50px;
+}
+
+.challenge__title {
+  font-size: 18px;
+  @include title-face;
+  font-weight: bold;
+  color: $color-text-dark;
+  text-align: left;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
 
   &::after {
     content: "";
@@ -52,43 +74,9 @@
     bottom: 0;
     left: 0;
   }
-}
-
-.challenge__date__time {
-  display: block;
-}
-
-.challenge__images {
-  display: flex;
-  align-items: flex-start;
-}
-
-.challenge__image__primary {
-  width: 80%;
-  border-radius: 50%;
-  border: 5px solid $color-white;
-  margin-left: -20%;
-  position: relative;
-  z-index: 100;
-}
-
-.challenge__image__secondary {
-  width: 50%;
-  border-radius: 50%;
-  margin-left: -10%;
-}
-
-.challenge__title {
-  font-size: 18px;
-  @include title-face;
-  font-weight: bold;
-  color: $color-text-dark;
-  text-align: right;
-  margin-top: -40px;
 
   span {
     display: block;
-    width: 9ch;
     margin: 0 0 0 auto;
     line-height: 1.2;
   }

@@ -2,20 +2,18 @@
 
 <div class="challenge">
   <div class="challenge__card">
-    <div class="challenge__date">
-      <span class="challenge__date__time"><strong>Starts: </strong><time>{{ challenge.start_date }}</time></span>
-      <span class="challenge__date__time"><strong>Ends: </strong><time>{{ challenge.end_date }}</time></span>
-    </div>
-
     <div class="challenge__primary">
-      <div class="challenge__images">
-        <img class="challenge__image__primary" src="assets/images/challenge-images/{{ challenge.primary_img }}" alt="{{ challenge.primary_img_alt }}">
-        <img class="challenge__image__secondary" src="assets/images/challenge-images/{{ challenge.secondary_img }}" alt="{{ challenge.secondary_img_alt }}">
-      </div>
-
       <div class="challenge__title">
         <span>{{ challenge.name }}</span>
       </div>
+      <div class="challenge__date">
+        <span class="challenge__date__time"><strong>Starts: </strong><time>{{ challenge.start_date }}</time></span>
+        <span class="challenge__date__time"><strong>Ends: </strong><time>{{ challenge.end_date }}</time></span>
+      </div>
+    </div>
+
+    <div class="challenge__images">
+      <img class="challenge__image__primary" src="assets/images/challenge-images/{{ challenge.primary_img }}" alt="{{ challenge.primary_img_alt }}">
     </div>
   </div>
 

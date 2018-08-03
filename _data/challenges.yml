@@ -5,7 +5,6 @@
   primary_img: back-to-school--primary.jpg
   secondary_img: back-to-school--secondary.jpg
   primary_img_alt: An apple atop a stack of four books in a classroom.
-  secondary_img_alt: Five pencils arranged horizontally on a desk, as seen from above.
 
 - name: Mark Cuban's Winter Reading Challenge
   sponsor: Sponsored by Mark Cuban
@@ -14,7 +13,6 @@
   primary_img: winter-reading--primary.jpg
   secondary_img: winter-reading--secondary.jpg
   primary_img_alt: A person bundled up in a sweater, all cozy at home, reading a book with a cup of coffee in hand.
-  secondary_img_alt: A lone evergreen tree standing strong on a snow-covered hill.
 
 - name: Read Across America Challenge
   sponsor: Sponsor to be announced
@@ -23,7 +21,6 @@
   primary_img: read-across-america--primary.jpg
   secondary_img: read-across-america--secondary.jpg
   primary_img_alt: The Golden Gate Bridge in San Fransico, representing the west coast.
-  secondary_img_alt: The Empire State Building in New York, representing the east coast.
 
 - name: Summer Reading Challenge
   sponsor: Sponsored by School Library Journal
@@ -32,4 +29,3 @@
   primary_img: summer-reading--primary.jpg
   secondary_img: summer-reading--secondary.jpg
   primary_img_alt: A woman, almost enclosed by the foliage around her, reading alone on a park bench.
-  secondary_img_alt: Sunglasses sitting atop a small hill of sand on the beach.
