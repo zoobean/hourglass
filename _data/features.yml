@@ -7,6 +7,10 @@
   image: tracking.jpg
   image_alt: Screenshot of the Beanstack app showing reading statistics for the week.
 
+- title: Set light to bright for reading or dim for night light
+  image: brightness.jpg
+  image_alt: A rendering of two smartphones, one with a sun representing Hourglass' full-light mode, the other with a moon representing its nightlight mode.
+
 - title: Participate in local and national reading challenges
   image: challenges.jpg
   image_alt: A collage of badges for the 2018 Winter Reading Challenge.
@@ -14,7 +18,3 @@
 - title: Receive digital badges for achievement
   image: badges.jpg
   image_alt: Partial screenshot from the Beanstack app showing an earned badge. Images of badges from other challenges accompany the screenshot.
-
-- title: Set light to bright for reading or dim for night light
-  image: brightness.jpg
-  image_alt: A rendering of two smartphones, one with a sun representing Hourglass' full-light mode, the other with a moon representing its nightlight mode.
