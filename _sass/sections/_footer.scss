@@ -106,7 +106,7 @@
 
   @include breakpoint(800px) {
     width: 300px;
-    top: 0;
+    top: 50px;
   }
 
   img {
@@ -130,13 +130,13 @@
 
   @include breakpoint(800px) {
     transform: rotate(0);
-    top: 300px;
+    top: 350px;
     right: -80px;
   }
 
   @include breakpoint(950px) {
     width: 800px;
-    top: 120px;
+    top: 180px;
   }
 
   @include breakpoint(1250px) {
