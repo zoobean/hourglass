@@ -51,10 +51,6 @@
     right: 25vw;
   }
 
-  @include breakpoint(580px) {
-
-  }
-
   @include breakpoint(730px) {
     right: 35vw;
     bottom: 15vw;
