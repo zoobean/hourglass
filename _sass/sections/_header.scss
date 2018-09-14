@@ -335,16 +335,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  //display: none;
 }
 
 .circles__set-1,
-.circles__set-2,
-.circles__set-3 {
+.circles__set-2 {
   &::before, &::after {
     content: "";
     position: absolute;
-    display: none;
   }
 }
 
@@ -360,6 +357,7 @@
 
     @include breakpoint(1150px) {
       @include circle('yellow', 160px);
+      box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
       top: -150px;
       right: -70px;
     }
@@ -377,7 +375,6 @@
     box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
     z-index: 200;
     animation: float 3s ease-in-out infinite alternate;
-    //animation-delay: 4.53s;
 
     @include breakpoint(1150px) {
       @include circle('purple', 150px);
@@ -393,80 +390,15 @@
     display: block;
     @include circle('yellow', 30px);
     position: absolute;
-    top: 40px;
-    left: 70px;
+    top: -10px;
+    left: 40px;
     box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.12);
     z-index: 300;
     animation: float 3.47s ease-in-out infinite alternate;
-    //animation-delay: 4.53s;
-  }
-}
-
-.circles__set-3 {
-  &::before {
-    @include circle('purple', 50px);
-    bottom: 00px;
-    left: -20px;
-    animation: float 5s ease-in-out infinite alternate;
-
-    @include breakpoint(430px) {
-      @include circle('purple', 120px);
-      bottom: 00px;
-      left: -40px;
-    }
-
-    @include breakpoint(580px) {
-      @include circle('purple', 40px);
-      top: 100px;
-      left: 200px;
-    }
-
-    @include breakpoint(720px) {
-      @include circle('purple', 20px);
-      top: 100px;
-      left: 200px;
-    }
-
-    @include breakpoint(950px) {
-      @include circle('purple', 35px);
-      top: 140px;
-      left: 450px;
-    }
-
-    @include breakpoint(950px) {
-      @include circle('purple', 35px);
-      top: 140px;
-      left: 450px;
-    }
 
     @include breakpoint(1150px) {
-      @include circle('purple', 55px);
-      top: 140px;
-      right: 540px;
-      left: auto;
-      display: none;
-    }
-  }
-
-  &::after {
-    @include breakpoint(430px) {
-      @include circle('yellow', 30px);
-      bottom: 150px;
-      left: 80px;
-      animation: float 3.5s ease-in-out infinite alternate;
-    }
-
-    @include breakpoint(720px) {
-      @include circle('yellow', 30px);
-      bottom: 0;
-      left: 80px;
-    }
-
-    @include breakpoint(1150px) {
-      @include circle('purple', 47px);
-      bottom: 100px;
-      right: 50px;
-      left: auto;
+      top: 40px;
+      left: 70px;
     }
   }
 }
