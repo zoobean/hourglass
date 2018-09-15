@@ -1,0 +1,120 @@
+$animation-speed: .3s;
+$animation-function: ease-out;
+$backdrop-color: rgba(0, 0, 0, .6);
+$modal-bg-color: #333;
+
+@keyframes modal-video {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes modal-video-inner {
+	from {
+		transform: translate(0, 100px);
+	}
+
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+.modal-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $backdrop-color;
+	z-index: 10000;
+	opacity: 1;
+	animation-timing-function: $animation-function;
+	animation-duration: $animation-speed;
+	animation-name: modal-video;
+	transition: opacity $animation-speed $animation-function;
+}
+
+.modal-video-close {
+	opacity: 0;
+
+	& .modal-video-movie-wrap {
+		transform: translate(0, 100px);
+	}
+}
+
+.modal-video-body {
+	max-width: 850px;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+.modal-video-inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-video-movie-wrap {
+	width: 100%;
+	height: 0;
+	position: relative;
+	padding-bottom: 56.25%;
+	background-color: $modal-bg-color;
+	animation-timing-function: $animation-function;
+	animation-duration: $animation-speed;
+	animation-name: modal-video-inner;
+	transform: translate(0, 0);
+	transition: transform $animation-speed $animation-function;
+
+	& iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.modal-video-close-btn {
+	position: absolute;
+	z-index: 2;
+	top: -45px;
+	right: 0;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+	border: none;
+	background: transparent;
+	padding: 0;
+	box-shadow: none;
+	border-radius: 0;
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		background: #fff;
+		border-radius: 50px;
+		margin-top: -6px;
+	}
+}
