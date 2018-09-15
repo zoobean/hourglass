@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  $(".js-modal-btn").modalVideo();
+
   featuresArray = document.querySelectorAll('.features .feature');
 
   featuredBar = document.querySelector('.graph__datapoint--featured .graph__datapoint__bar');

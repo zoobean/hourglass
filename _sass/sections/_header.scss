@@ -9,11 +9,11 @@
   align-items: center;
 
   @include breakpoint(950px) {
-    height: 500px;
+    height: 70vh;
   }
 
   @include breakpoint(1150px) {
-    height: 650px;
+    height: 70vh;
     background-position: center 70%;
   }
 
