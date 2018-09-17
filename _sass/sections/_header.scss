@@ -136,6 +136,7 @@
   background-color: $color-background-gray;
   position: relative;
   margin-bottom: 30px;
+  top: -5px;
 
   @include breakpoint(530px) {
     margin-bottom: 70px;
