@@ -136,7 +136,11 @@
   background-color: $color-background-gray;
   position: relative;
   margin-bottom: 30px;
-  top: -5px;
+  top: -2px;
+
+  @include breakpoint(430px) {
+    top: -3px;
+  }
 
   @include breakpoint(530px) {
     margin-bottom: 70px;
@@ -148,6 +152,7 @@
 
   @include breakpoint(1150px) {
     margin-bottom: 130px;
+    top: -5px;
   }
 
   &::after {
