@@ -43,6 +43,10 @@
 
   @include breakpoint(530px) {
     display: flex;
+    align-items: flex-start;
+  }
+
+  @include breakpoint(800px) {
     align-items: center;
   }
 
@@ -77,20 +81,54 @@
   &::after {
     content: none;
   }
+
+  .step__content {
+    @include breakpoint(800px) {
+      margin-top: 60px;
+    }
+
+    @include breakpoint(1150px) {
+      margin-top: 20px;
+    }
+  }
+
+  .step__image {
+    @include breakpoint(1150px) {
+      margin-top: 120px;
+    }
+  }
 }
 
 
 .step__image {
-  margin-bottom: -50px;
+  margin-bottom: 50px;
 
   @include breakpoint(530px) {
     @include column(6);
     margin: 0;
+    position: relative;
+  }
+
+  @include breakpoint(800px) {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @include breakpoint(1150px) {
+    @include column(6);
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 90px;
     margin-left: -(column_width(2));
+    position: relative;
+    left: column_width(2);
   }
 
   img {
     max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   }
 }
 
@@ -106,10 +144,8 @@
     @include column(5);
   }
 
-  h2 {
-    @include breakpoint(800px) {
-      margin-left: -60px;
-    }
+  @include breakpoint(1150px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -126,19 +162,35 @@
 }
 
 .step--reversed {
+  @include breakpoint(1150px) {
+    padding-bottom: 20px;
+  }
+
   .step__image {
-    order: 2;
     margin-left: 0;
-    margin-left: (column_width(2));
+
+    @include breakpoint(800px) {
+      order: 2;
+      margin-left: (column_width(2));
+    }
+
+    @include breakpoint(1150px) {
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
   }
 
   .step__content {
-    order: 1;
-
     @include breakpoint(800px) {
       position: relative;
-      left: 90px;
+      order: 1;
       @include column(5);
+    }
+
+    @include breakpoint(1150px) {
+      left: 90px;
+      margin-top: 50px;
+      //margin-top: -10px;
     }
 
     h2 {
