@@ -56,12 +56,20 @@
       width: 50vw;
       height: 150px;
       position: absolute;
-      bottom: -30%;
+      bottom: -35%;
       left: 15%;
       background: url('/assets/images/steps/step-1-to-2.svg');
       background-repeat: no-repeat;
       background-position: left bottom;
       background-size: contain;
+    }
+
+    @include breakpoint(1050px) {
+      bottom: -40%;
+    }
+
+    @include breakpoint(1150px) {
+      bottom: -30%;
     }
   }
 }
@@ -74,6 +82,16 @@
     bottom: -50%;
     left: auto;
     right: 13%;
+
+    @include breakpoint(800px) {
+      right: 30%;
+      bottom: -50%;
+    }
+
+    @include breakpoint(1150px) {
+      right: 13%;
+      bottom: -50%;
+    }
   }
 }
 
@@ -111,8 +129,8 @@
 
   @include breakpoint(800px) {
     margin: 0;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @include breakpoint(1150px) {
