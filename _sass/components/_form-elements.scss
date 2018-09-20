@@ -1,0 +1,56 @@
+.input {
+  @include body-face;
+  width: 100%;
+}
+
+.input__label {
+  font-weight: bold;
+}
+
+.input__box {
+  padding: 10px 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: none;
+  width: 100%;
+  border-bottom: 3px solid $color-light-gray;
+  transition: border-bottom-color 0.13s ease-in-out;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom-color: $color-dark-purple;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+input[type="submit"] {
+  @include body-face;
+  background-color: $color-blue;
+  cursor: pointer;
+  color: white;
+  padding: 0.75em 2em;
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 11px 18px 0 rgba(0,0,0,0.08);
+  text-decoration: none;
+  background-color: mix(#000, $color-blue, 40%);
+  display: inline-block;
+  transition: background-color 0.15s ease-in-out;
+  margin-top: 40px;
+
+  &:hover {
+    background-color: mix(#000, $color-blue, 60%);
+  }
+
+  &:focus {
+    background-color: mix(#000, $color-blue, 60%);
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  }
+}

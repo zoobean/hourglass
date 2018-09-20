@@ -10,6 +10,44 @@
     @include breakpoint(720px) {
       @include column(5);
     }
+
+    @include breakpoint(1150px) {
+      @include column(5);
+      @include prepend(1);
+    }
+  }
+
+  .circle-1 {
+    @include breakpoint(1150px) {
+      @include circle('white', 120px);
+      position: absolute;
+      top: 65%;
+      right: -160px;
+      box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.08);
+      animation: float 4s ease-in-out infinite alternate;
+    }
+  }
+
+  .circle-2 {
+    @include breakpoint(1150px) {
+      @include circle('yellow', 30px);
+      position: absolute;
+      top: 65%;
+      right: -80px;
+      box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.08);
+      animation: float 2.4s ease-in-out infinite alternate;
+    }
+  }
+
+  .circle-3 {
+    @include breakpoint(1150px) {
+      @include circle('purple', 40px);
+      position: absolute;
+      top: -15%;
+      left: -100px;
+      box-shadow: 12px 9px 36px 0 rgba(0,0,0,0.08);
+      animation: float 2s ease-in-out infinite alternate;
+    }
   }
 }
 

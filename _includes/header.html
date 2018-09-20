@@ -2,8 +2,8 @@
     <div class="header__intro">
       <h1>
         <span class="header__intro__smalltext">Introducing</span>
-        Hourglass
-        <span class="header__intro__smalltext header__intro__smalltext--right">by Beanstack</span>
+        Hourglass.
+        <span class="header__intro__smalltext header__intro__smalltext--right">Your kid's Fitbit for reading.</span>
       </h1>
     </div>
 </header>
@@ -17,11 +17,7 @@
     <div class="button-container">
 
       <div class="buy-now">
-        <a href="https://www.beanstack.com/hourglassinfo" class="buy-button">Join Pre-Order List</a>
-        <div class="price">
-          <span class="price__regular">$49.99</span>
-          <span class="price__discount">$29.99</span>
-        </div>
+        <a data-micromodal-trigger="modal-1" class="buy-button">Get Updates</a>
         <span class="buy-now__note">Special pricing available for schools and libraries.</span>
       </div>
 
@@ -39,5 +35,40 @@
   <div class="header__circles">
     <div class="circles__set-1"></div>
     <div class="circles__set-2"></div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Let me know updates on the Hourglass.
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="https://zoobean.us6.list-manage.com/subscribe/post?u=e967a2b978f4de188cc945016&amp;id=1852182e3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate modal__form" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+
+        <div class="mc-field-group input">
+        	<label for="mce-EMAIL" class="input__label">Email Address </label>
+        	<input type="email" value="" name="EMAIL" class="required email input__box" id="mce-EMAIL">
+        </div>
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e967a2b978f4de188cc945016_1852182e3a" tabindex="-1" value=""></div>
+            <div class="clear button-wrapper"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+      </main>
+    </div>
   </div>
 </div>

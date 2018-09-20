@@ -7,6 +7,10 @@
   @include breakpoint(1050px) {
     @include column(10);
   }
+
+  @include breakpoint(1150px) {
+    @include prepend(1);
+  }
 }
 
 .graph__datapoint {
