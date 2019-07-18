@@ -1,31 +1,23 @@
-- name: Back to School Challenge
-  sponsor: Sponsored by Junior Library Guild
-  start_date: September 15, 2018
-  end_date: October 15, 2018
-  primary_img: back-to-school--primary.jpg
-  secondary_img: back-to-school--secondary.jpg
-  primary_img_alt: An apple atop a stack of four books in a classroom.
+- name: Annual Winter Reading Challenge
+  start_date: January 1, 2020
+  end_date: January 31, 2020
+  primary_img: winter.png
+  primary_img_alt: Going into its third year, this annual challenge has previously been sponsored by Mark Cuban and will have a new sponsor for 2020.
 
-- name: Mark Cuban's Winter Reading Challenge
-  sponsor: Sponsored by Mark Cuban
-  start_date: January 1, 2019
-  end_date: January 31, 2019
-  primary_img: winter-reading--primary.jpg
-  secondary_img: winter-reading--secondary.jpg
-  primary_img_alt: A person bundled up in a sweater, all cozy at home, reading a book with a cup of coffee in hand.
+- name: Spring Reading Challenge
+  start_date: April 6, 2020
+  end_date: April 20, 2020
+  primary_img: spring.png
+  primary_img_alt: This reading challenge will be held for two weeks around the time many kids and families are off for spring break.
 
-- name: Read Across America Challenge
-  sponsor: Sponsor to be announced
-  start_date: March 2, 2019
-  end_date: March 8, 2019
-  primary_img: read-across-america--primary.jpg
-  secondary_img: read-across-america--secondary.jpg
-  primary_img_alt: The Golden Gate Bridge in San Fransico, representing the west coast.
+- name: Next Level Summer Reading Challenge
+  start_date: July 1, 2020
+  end_date: July 31, 2020
+  primary_img: summer.png
+  primary_img_alt: This reading challenge is designed to keep up momentum and encourage more completions after the busy June month of summer reading season.
 
-- name: Summer Reading Challenge
-  sponsor: Sponsored by School Library Journal
-  start_date: June 1, 2019
-  end_date: July 31, 2019
-  primary_img: summer-reading--primary.jpg
-  secondary_img: summer-reading--secondary.jpg
-  primary_img_alt: A woman, almost enclosed by the foliage around her, reading alone on a park bench.
+- name: Fall Reading Challenge
+  start_date: October 5, 2020
+  end_date: October 19, 2020
+  primary_img: fall.png
+  primary_img_alt: This 2-week reading challenge will be held soon after back to school season and around the time many kids and families take a longer fall weekend.
